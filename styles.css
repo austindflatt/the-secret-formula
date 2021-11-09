@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
+::selection {
+    background-color: #ff4a54;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(21, 21, 21);
@@ -114,8 +118,8 @@ body {
     float: right;
 }
 
-.buton:hover {
-    background-color: beige;
+.a:hover {
+    color: #000;
 }
 
 /* Input styling */
@@ -126,7 +130,7 @@ input {
     font-family: Roboto;
     color: #FFF;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
