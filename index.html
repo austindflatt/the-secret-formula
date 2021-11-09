@@ -8,55 +8,76 @@
     <link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>The Alerter</h1>
+    <div class="container">
+    <p class="glitch">
+    <span aria-hidden="true">the secret</span>
+    the secret
+    <span aria-hidden="true">the secret</span>
+    </p>
+    <span class="sub">FORMULA</span>
+    <h1>The Alerter 🔔</h1>
     <form>
         <label>Enter your message</label>
-        <input type="text" id="input-text">
+        <input type="text" id="input-text" placeholder="Enter a message">
         <br />
-        <button type="submit">Submit</button>
+        <button class="button" type="submit">Submit Message</button>
     </form>
     <br />
-    <h1>Sandwich builder</h1>
+    <h1>Sandwich builder 🥪</h1>
     <form id="sandwichForm">
-        <label>White bread</label>
-        <input type="checkbox" id="bread1">
-        <label>Wheat bread</label>
-        <input type="checkbox" id="bread2">
-        <label>Turkey</label>
-        <input type="checkbox" id="turkey">
-        <label>Ham</label>
-        <input type="checkbox" id="ham">
-        <label>Tomato</label>
-        <input type="checkbox" id="tomato">
-        <label>Mozzerella</label>
-        <input type="checkbox" id="mozzerlla">
-        <label>Spinach</label>
-        <input type="checkbox" id="spinach">
-        <label>Lettuce</label>
-        <input type="checkbox" id="lettuce">
-        <label>Peppers</label>
-        <input type="checkbox" id="peppers">
+        <div class="sandwichGroup">
+        <label class="sandwich">White bread 🍞</label>
+        <input type="checkbox" id="bread1" class="option-input checkbox">
+        <label class="sandwich">Deli bun 🥖<div class="tick"></div></label>
+        <input type="checkbox" id="bread2" class="option-input checkbox">
+        <label class="sandwich">Turkey 🥩</label>
+        <input type="checkbox" id="turkey" class="option-input checkbox">
+        <label class="sandwich">Ham 🥓</label>
+        <input type="checkbox" id="ham" class="option-input checkbox">
+        <label class="sandwich">Tomato 🍅</label>
+        <input type="checkbox" id="tomato" class="option-input checkbox">
+        <label class="sandwich">Mozzerella 🧀</label>
+        <input type="checkbox" id="mozzerlla" class="option-input checkbox">
+        <label class="sandwich">Spinach 🥬</label>
+        <input type="checkbox" id="spinach" class="option-input checkbox">
+        <label class="sandwich">Lettuce 🥬</label>
+        <input type="checkbox" id="lettuce" class="option-input checkbox">
+        <label class="sandwich">Peppers 🌶</label>
+        <input type="checkbox" id="peppers" class="option-input checkbox">
+        </div>
         <br />
-        <button type="submit">Submit</button>
+        <button class="button" type="submit">Build Sandwich</button>
     </form>
     <br />
-    <h1>Haircut appointment scheduler</h1>
+    <h1>Haircut appointment scheduler 💈</h1>
     <form id="haircutForm">
         <label>Select a date</label>
-        <input type="date" id="date">
+        <input type="date" id="date" placeholder="Select a date">
         <label>What barber do you want?</label>
-        <input type="text" id="barber">
+        <input type="text" id="barber" placeholder="Who do you want to cut your hair?">
         <h3>Long or short hair?</h3>
-        <fieldset>
         <label>Long hair</label>
-        <input type="radio" id="longHair">
+        <input type="radio" id="longHair" class="option-input radio">
         <label>Short hair</label>
-        <input type="radio" id="shortHair">
-        </fieldset>
+        <input type="radio" id="shortHair" class="option-input radio">
         <br />
-        <button type="submit">Submit</button>
+        <button class="button" type="submit">Set Appointment</button>
     </form>
-
+    <br />
+    <h1>Create account ⚙️</h1>
+    <form id="createForm">
+        <label>Enter a username</label>
+        <input type="text" id="username" placeholder="Type a username">
+        <label>Enter your email</label>
+        <input type="email" id="email" placeholder="user@email.com">
+        <label>Create a password</label>
+        <input type="password" id="password" placeholder="Enter a password">
+        <label>Confirm password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm password">
+        <br />
+        <button class="button" type="submit">Create Account</button>
+    </form>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>

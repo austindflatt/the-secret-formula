@@ -74,3 +74,20 @@ haircutForm.addEventListener('submit', function(event) {
     }
     alert(style);
 })
+
+// Create account form
+const createForm = document.querySelector('#createForm');
+const username = document.querySelector('#username');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
+const confirmPassword = document.querySelector('#confirm-password');
+
+createForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    let confirmation = 'You created an account! ✅ Your username is ' + username.value + ' & the email you used is ' + email.value;
+    if (password.value === confirmPassword.value) {
+        alert(confirmation);
+    } else {
+        alert('Please try again! Passwords did not match. ❌');
+    }
+});
