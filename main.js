@@ -25,6 +25,7 @@ const mozzerlla = document.querySelector('#mozzerlla');
 const spinach = document.querySelector('#spinach');
 const lettuce = document.querySelector('#lettuce');
 const peppers = document.querySelector('#peppers');
+const egg = document.querySelector('#egg');
 
 
 sandwichForm.addEventListener('submit', function(event) {
@@ -34,7 +35,7 @@ sandwichForm.addEventListener('submit', function(event) {
         ingredients += 'White bread, '
     }
     if (bread2.checked) {
-        ingredients += 'Deli, '
+        ingredients += 'Deli bun, '
     }
     if (turkey.checked) {
         ingredients += 'Turkey, '
@@ -55,7 +56,10 @@ sandwichForm.addEventListener('submit', function(event) {
         ingredients += 'Lettuce, '
     }
     if (peppers.checked) {
-        ingredients += 'Peppers'
+        ingredients += 'Peppers, '
+    }
+    if (egg.checked) {
+        ingredients += 'Egg'
     }
     alert(ingredients);
 })
