@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #000;
+    background: rgb(21, 21, 21);
     color: #FFF;
 }
 
@@ -15,6 +15,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.box {
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+    width: 1200px;
+    border-radius: 4px;
+    padding: 0 15px 20px 20px;
 }
 
 .h3 {
