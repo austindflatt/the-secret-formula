@@ -111,6 +111,7 @@ body {
     transition: opacity 1s;
     border-style: none;
     cursor: pointer;
+    float: right;
 }
 
 .buton:hover {
