@@ -55,3 +55,22 @@ sandwichForm.addEventListener('submit', function(event) {
     }
     alert(ingredients);
 })
+
+// Haircut appointment scheduler
+const haircutForm = document.querySelector('#haircutForm');
+const date = document.querySelector('#date');
+const barber = document.querySelector('#barber');
+const hairstyle1 = document.querySelector('#longHair');
+const hairstyle2 = document.querySelector('#shortHair');
+
+haircutForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    let style = 'Haircut scheduled for ' + date.value + ' with ' + barber.value + ' for ';
+    if (hairstyle1.checked) {
+        style += 'Long hair'
+    }
+    if (hairstyle2.checked) {
+        style += 'Short hair'
+    }
+    alert(style);
+})
