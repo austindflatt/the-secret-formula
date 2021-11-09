@@ -34,7 +34,7 @@ sandwichForm.addEventListener('submit', function(event) {
         ingredients += 'White bread, '
     }
     if (bread2.checked) {
-        ingredients += 'Wheat bread, '
+        ingredients += 'Deli, '
     }
     if (turkey.checked) {
         ingredients += 'Turkey, '

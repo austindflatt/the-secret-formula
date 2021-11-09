@@ -166,12 +166,14 @@ input:-webkit-autofill:active {
 /* Checkbox */
 .sandwichGroup {
     display: flex;
-    flex-direction: column;
-    padding: 0.5em;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .sandwich {
     position: relative;
-    display: flex;
+    flex-basis: 22%;
+    margin: 10px;
+    padding: 10px;
     margin: .6em 0;
     font-size: 24px;
     align-items: center;
