@@ -6,8 +6,12 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     console.log(inputText.value);
     let message = inputText.value;
+    if (inputText.value.length === 0) {
+        alert('Error! You must type a message');
+    } else {
+        alert(message);
+    }
     inputText.value = '';
-    alert(message);
 })
 
 // Sandwich builder
